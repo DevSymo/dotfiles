@@ -1,0 +1,202 @@
+/* === HIDE UNUSED UI ELEMENTS === */
+.title-label > h2 {
+  display: none;
+}
+.editor-actions {
+  display: none;
+}
+.pane-body {
+  padding: 8px;
+}
+.pane-header {
+  padding: 0 8px;
+}
+.nosidebar .inline-tabs-placeholder {
+  width: 75px;
+}
+.split-view-view:first-child .pane-header {
+  display: none !important;
+}
+
+/* === LIST AND ROW STYLES === */
+.monaco-list-row {
+  border-radius: 6px;
+}
+.monaco-list-row.selected,
+.monaco-list-row.focused {
+  box-shadow: inset 0 1px 0 #ffffff09 !important;
+  outline: 1px solid #00000020 !important;
+}
+.monaco-workbench .monaco-list:not(.element-focused):focus:before {
+  display: none;
+}
+
+/* === LINE NUMBERS & CURSOR === */
+.line-numbers {
+  width: 36px !important;
+}
+.current-line-margin-both {
+  background-color: #ffffff12 !important;
+  box-shadow: inset 0 1px 0 #ffffff09 !important;
+  width: calc(100% - 16px) !important;
+  left: 12px !important;
+  border-radius: 4px;
+}
+.editor-cursor {
+  color: #ffcc00 !important;
+}
+
+/* === STATUS BAR BEHAVIOUR === */
+.statusbar {
+  opacity: 0;
+}
+.statusbar:hover {
+  opacity: 1;
+}
+
+/* === QUICK INPUT WIDGET === */
+.quick-input-widget {
+  top: 50% !important;
+  transform: translateY(-51%);
+  backdrop-filter: blur(10px);
+  border: 1px solid #ffffff12;
+}
+.quick-input-widget .monaco-inputbox {
+  height: 32px !important;
+  border-radius: 8px;
+  margin-bottom: 4px;
+}
+.quick-input-widget .monaco-list-rows {
+  background: transparent !important;
+}
+
+/* === HOVER WIDGET === */
+.hover-widget {
+  backdrop-filter: blur(10px);
+}
+
+/* === EDITOR UI === */
+.editor-background {
+  background-color: #212121 !important;
+}
+.editor-foreground {
+  color: #eeffff !important;
+}
+.editor-line-highlight {
+  background-color: #00000050 !important;
+}
+.editor-selection {
+  background-color: #61616150 !important;
+}
+.editor-word-highlight {
+  background-color: #ff9cac30 !important;
+}
+.editor-word-highlight-strong {
+  background-color: #c3e88d30 !important;
+}
+
+/* === SIDEBAR === */
+.sidebar {
+  background-color: #212121 !important;
+  color: #676767 !important;
+}
+.sidebar ul[role="tablist"] .action-item {
+  width: 40px;
+  padding: 0px !important;
+  height: 32px !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+.sidebar ul[role="tablist"] .action-item.checked {
+  background-color: #ffffff12 !important;
+  box-shadow: inset 0 1px 0 #ffffff09 !important;
+  border-radius: 6px;
+  outline: 1px solid #00000020 !important;
+}
+
+/* === ACTIVITY BAR === */
+.activity-bar {
+  background-color: #212121 !important;
+  border-bottom: 1px solid #21212160 !important;
+}
+.activity-bar .icon {
+  color: #eeffff !important;
+}
+.activity-bar .badge {
+  background-color: #d9b974 !important;
+  color: #000000 !important;
+}
+
+/* === FIND WIDGET === */
+.find-widget {
+  border-radius: 6px;
+  backdrop-filter: blur(10px);
+}
+
+/* === TERMINAL COLOURS === */
+.terminal {
+  background-color: #212121 !important;
+  color: #eeffff !important;
+}
+.terminal-cursor {
+  background-color: #000000;
+  color: #ffcb6b;
+}
+.terminal-ansiBlack {
+  color: #000000;
+}
+.terminal-ansiBlue {
+  color: #82aaff;
+}
+.terminal-ansiCyan {
+  color: #89ddff;
+}
+.terminal-ansiGreen {
+  color: #c3e88d;
+}
+.terminal-ansiMagenta {
+  color: #c792ea;
+}
+.terminal-ansiRed {
+  color: #f07178;
+}
+.terminal-ansiWhite {
+  color: #ffffff;
+}
+.terminal-ansiYellow {
+  color: #ffcb6b;
+}
+
+/* === DROPDOWN & MENU === */
+.dropdown {
+  background-color: #212121 !important;
+  border: 1px solid #ffffff10 !important;
+}
+.menu {
+  background-color: #202020bb !important;
+  border: 1px solid #ffffff09 !important;
+  backdrop-filter: blur(10px);
+}
+
+/* === STATUS BAR === */
+.status-bar {
+  background-color: #212121 !important;
+  border: 1px solid #21212160 !important;
+}
+.status-bar .item {
+  color: #616161 !important;
+}
+.status-bar .item.remote {
+  background-color: #d9b974 !important;
+  color: #000000 !important;
+}
+
+/* === PANEL & EDITOR GROUPS === */
+.panel {
+  background-color: #212121 !important;
+}
+.editor-group-border {
+  border: 1px solid #00000030 !important;
+}
