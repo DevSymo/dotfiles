@@ -30,7 +30,7 @@ feather-vscode
   "workbench.activityBar.iconClickBehavior": "focus",
 
   // WINDOW SETTINGS ///////////////////////////////////////////////////
-  "window.zoomLevel": 0,
+  "window.zoomLevel": 0.5227586988632231,
   "window.title": "${activeRepositoryName}",
 
   // SCROLLING AND NAVIGATION ///////////////////////////////////////////
@@ -393,11 +393,12 @@ feather-vscode
     "lists": ["explorer-folders-view", "quick-input-list"],
     "height": 32
   },
-  "apc.imports": [
-    "file:///Users/deaconsymington/Documents/Coding/Node/vscode/3/vsc.css"
-  ],
+  // "apc.imports": [
+  //   "file:///Users/deaconsymington/Documents/Coding/Node/vscode/3/vsc.css"
+  // ],
   "vscode_custom_css.imports": [
-    "file:///Users/deaconsymington/Documents/Coding/Node/vscode/3/vscode-script.js"
+    "file:///Users/deaconsymington/Documents/Coding/Node/vscode/3/vscode-script.js",
+    "file:///Users/deaconsymington/Documents/Coding/Node/vscode/3/vsc.css"
   ],
 
   // EXTENSION-SPECIFIC SETTINGS  ///////////////////////////////////
