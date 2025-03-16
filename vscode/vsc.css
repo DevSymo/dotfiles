@@ -43,37 +43,38 @@
 
 /* QUICK INPUT & WIDGETS //////////////////////////////////////*/
 .quick-input-widget {
-  transform: translateY(-50%) !important;
   top: 50% !important;
-  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.35) !important;
-  /* border: 4px solid rgba(24, 135, 129, .35) !important; */
-  padding: 10px 10px 18px 10px !important;
-  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
-  /* background: #3c3c50 !important; */
-  backdrop-filter: blur(3px) !important;
-  border-radius: 20px !important;
-  /* width: 50% !important; */
+  transform-origin: top;
+  transform: translateY(-50%);
+  backdrop-filter: var(--blur);
+  border: 1px solid #ffffff12;
 }
 
-.quick-input-list,
-.quick-input-list .list_id_6 {
-  min-height: 400px !important;
+.suggest-input-container {
+  height: 24px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: var(--radius);
 }
 
-/* Remove background for lists */
-.monaco-list-rows {
+.quick-input-widget .monaco-inputbox {
+  height: 32px !important;
+  border-radius: var(--radius-lg);
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.quick-input-list-entry {
+  align-items: center;
+}
+
+.quick-input-widget .monaco-list-rows {
   background: transparent !important;
-}
-
-/* Command palette text input */
-.quick-input-filter .monaco-inputbox {
-  border-radius: 12px !important;
-  padding: 16px !important;
-  border: none !important;
-  /* background-color: rgba(34, 34, 34, .40) !important; */
-  font-family: "Geist Mono" !important;
-  font-size: 16px !important;
-  margin-bottom: 16px !important;
 }
 
 #command-blur {
@@ -84,16 +85,6 @@
   top: 0;
   left: 0;
   backdrop-filter: blur(8px);
-}
-
-/* Command palette's input box placeholder. */
-.monaco-inputbox input::placeholder {
-  color: rgba(255, 255, 255, 0.3) !important;
-}
-
-/* Container that holds the VS Code home icon. */
-.editor-group-watermark {
-  max-width: none !important;
 }
 
 /* TAB STYLING ///////////////////////////////////////////////*/
@@ -260,10 +251,11 @@ footer.statusbar {
   border: var(--border);
 }
 
-/* TERMINAL & SPLIT VIEW ////////////////////////////////////*/
+/* TERMINAL & SPLIT VIEW ////////////////////////////////////
 .monaco-workbench .pane-body.integrated-terminal {
   margin-top: var(--radius-lg);
 }
+*/
 
 .split-view-view {
   border-right: 1px solid transparent !important;

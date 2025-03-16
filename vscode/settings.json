@@ -93,7 +93,7 @@ feather-vscode
   "markdown.preview.fontFamily": "\"Inter\",-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif",
   "scm.inputFontFamily": "Inter",
   "scm.inputFontSize": 14,
-  "apc.font.family": "inter medium",
+  "apc.font.family": "inter",
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
 
   // GIT & SCM  //////////////////////////////////////////////////////
@@ -394,11 +394,12 @@ feather-vscode
     "height": 32
   },
   // "apc.imports": [
-  //   "file:///Users/deaconsymington/Documents/Coding/Node/vscode/3/vsc.css"
+  //   "${userHome}/dotfiles/vsc.css",
+  //   "${userHome}/dotfiles/vscode-script.js"
   // ],
   "vscode_custom_css.imports": [
-    "file:///Users/deaconsymington/Documents/Coding/Node/vscode/3/vscode-script.js",
-    "file:///Users/deaconsymington/Documents/Coding/Node/vscode/3/vsc.css"
+    "file://${userHome}/dotfiles/vscode/vsc.css",
+    "file://${userHome}/dotfiles/vscode/vscode-script.js"
   ],
 
   // EXTENSION-SPECIFIC SETTINGS  ///////////////////////////////////
